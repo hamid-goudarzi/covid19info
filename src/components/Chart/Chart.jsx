@@ -12,6 +12,30 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
     };
     fetchAPI();
   }, []);
+  useEffect(() => {
+    const fetchAPI = async () => {
+      setDailyData(await fetchDailyData());
+    };
+    fetchAPI();
+  }, []);
+  useEffect(() => {
+    const fetchAPI = async () => {
+      setDailyData(await fetchDailyData());
+    };
+    fetchAPI();
+  }, []);
+  useEffect(() => {
+    const fetchAPI = async () => {
+      setDailyData(await fetchDailyData());
+    };
+    fetchAPI();
+  }, []);
+  useEffect(() => {
+    const fetchAPI = async () => {
+      setDailyData(await fetchDailyData());
+    };
+    fetchAPI();
+  }, []);
 
   const lineChart = dailyData.length ? ( //0
     <Line
