@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   Card,
   CardContent,
@@ -39,7 +38,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Typography color="textSecondary ">
               {new Date(lastUpdate).toDateString()}
             </Typography>
-            <Typography variant="body2 ">
+            <Typography variant="body1 ">
               Number of active cases of COVID-19
             </Typography>
           </CardContent>
