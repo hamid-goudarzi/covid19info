@@ -23,6 +23,7 @@ const CountryPicker = ({ handleCountryChange }) => {
         className={styles.formControl}
       >
         <option value="">Global</option>
+        <option value="">Global</option>
         {fetchedCountries.map((country, i) => (
           <option key={i} value={country}>
             {country}
