@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: calc(12-11deg)
+  font-family: cursive;
 }
 .image {
   width: 370px;
