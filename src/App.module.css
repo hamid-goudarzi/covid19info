@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: cursive;
+  font-family: calc(12-11deg)
 }
 .image {
   width: 370px;
@@ -21,6 +21,8 @@ body {
   .container {
     margin: 0 10%;
   }
-
+  .image {
+    width: 100%;
+  }
 }
 
