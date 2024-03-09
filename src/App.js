@@ -30,6 +30,7 @@ class App extends Component {
         <Cards data={data} />
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
+        <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />
       </div>
     );
