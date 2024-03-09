@@ -5,13 +5,13 @@ import { fetchCountries } from "../../api";
 
 const CountryPicker = ({ handleCountryChange }) => {
   const [fetchedCountries, setFetchedCountries] = useState([]);
-
   useEffect(() => {
     const fetchAPI = async () => {
       setFetchedCountries(await fetchCountries());
     };
 
     fetchAPI();
+    fetchNewAPI();
   }, [setFetchedCountries]);
   console.log(fetchedCountries);
   return (
@@ -21,7 +21,6 @@ const CountryPicker = ({ handleCountryChange }) => {
         onChange={(e) => handleCountryChange(e.target.value)}
         className={styles.formControl}
       >
-        <option value="">Global</option>
         <option value="">Global</option>
         {fetchedCountries.map((country, i) => (
           <option key={i} value={country}>
