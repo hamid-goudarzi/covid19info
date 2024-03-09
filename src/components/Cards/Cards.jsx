@@ -28,9 +28,6 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Typography color="textSecondary" gutterBottom>
               Infected
             </Typography>
-            <Typography color="textSecondary" gutterBottom>
-              Healthy
-            </Typography>
             <Typography variant="h5">
               <CountUp
                 start={0}
