@@ -9,13 +9,16 @@ class App extends Component {
     data: {},
     country: "",
   };
+
   async componentDidMount() {
     const fetchedData = await fetchData();
 
     this.setState({ data: fetchedData });
   }
   handleCountryChange = async (country) => {
+    //fetch data
     const fetchedData = await fetchData(country);
+    //set state
     this.setState({ data: fetchedData, country: country });
   };
   render() {
